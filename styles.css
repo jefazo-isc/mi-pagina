@@ -606,9 +606,12 @@ body::after {
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
   }
-  body { 
+  html, body { 
     background-color: var(--bg-deep) !important; 
     color: var(--text-primary) !important;
+    height: auto !important;
+    min-height: 100% !important;
+    overflow: visible !important;
   }
   .hero-particles {
     display: none !important;
