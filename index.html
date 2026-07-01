@@ -3,82 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark">
     <title>Yahir Guevara | Portafolio Profesional</title>
+    <meta name="description" content="Portafolio profesional de Yahir Guevara Cardona — Ingeniero en Sistemas especializado en desarrollo web, automatización y resolución de problemas técnicos.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
     <link rel="stylesheet" href="styles.css">
+    <!-- CDN de FontAwesome para iconos profesionales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
 
     <header class="hero">
+        <canvas class="hero-particles" id="hero-particles" aria-hidden="true"></canvas>
         <div class="hero-content scroll-reveal fade-up">
+            <div class="profile-img-container">
+                <div class="profile-img-ring">
+                    <img src="yahir.png" alt="Foto de Yahir Guevara" class="profile-img">
+                </div>
+            </div>
             <h1>Yahir Guevara Cardona</h1>
-            <h2>Ingeniería en Sistemas | Optimización de Procesos</h2>
+            <h2>Ingeniería en Sistemas</h2>
             <div class="contact-links">
-                <a href="mailto:tu.correo@gmail.com">✉️ Email</a>
-                <a href="https://linkedin.com/in/tu-perfil" target="_blank">in LinkedIn</a>
-                <a href="https://github.com/tu-usuario" target="_blank">⌨️ GitHub</a>
+                <a href="mailto:guevara.cardona.yahir@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+                <a href="https://www.linkedin.com/in/guevara-cardona-yahir-529111372/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/jefazo-isc/" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
             </div>
         </div>
     </header>
 
     <main class="container">
         
-        <section class="card scroll-reveal slide-right">
-            <h3>Perfil Profesional</h3>
-            <p>Estudiante de Ingeniería en Sistemas con capacidad analítica y enfoque en la resolución técnica de problemas. Especializado en el desarrollo de herramientas tecnológicas, automatización de tareas y gestión estructurada de la información. Busco aplicar el pensamiento sistémico para estandarizar procesos y aportar eficiencia operativa, con la mira puesta en el desarrollo dentro del sector automotriz tecnológico.</p>
+        <section class="card scroll-reveal fade-up">
+            <h3>Acerca de Mí</h3>
+            <p>Soy una persona orientada a la lógica, la resolución de problemas técnicos y la construcción de sistemas robustos. Me enfoco en entender el funcionamiento del software y hardware desde la raíz para desarrollar soluciones eficientes. Busco eliminar tareas repetitivas mediante código, automatización y pensamiento analítico, asegurando la calidad y el rendimiento en cada despliegue.</p>
         </section>
 
         <section class="card scroll-reveal slide-left">
             <h3>Habilidades Técnicas y Competencias</h3>
             <div class="skills-grid">
-                <div class="skill-tag">Resolución de Problemas</div>
-                <div class="skill-tag">Automatización</div>
-                <div class="skill-tag">Gestión de Proyectos</div>
-                <div class="skill-tag">Trabajo en Equipo</div>
-                <div class="skill-tag">Office (Avanzado)</div>
-                <div class="skill-tag">Inglés (B2)</div>
+                <div class="skill-tag">C++ & Python</div>
+                <div class="skill-tag">JavaScript & PHP</div>
+                <div class="skill-tag">Angular + Node.js</div>
+                <div class="skill-tag">Bash Scripting</div>
                 <div class="skill-tag">Bases de Datos (SQL)</div>
-                <div class="skill-tag">Desarrollo Web (JS/PHP)</div>
-                <div class="skill-tag">Scripting (Bash/Python)</div>
+                <div class="skill-tag">Responsive Design</div>
                 <div class="skill-tag">Linux (Debian)</div>
-            </div>
-        </section>
-
-        <section class="card scroll-reveal fade-up">
-            <h3>Proyectos y Experiencia Técnica</h3>
-            
-            <div class="experience-item">
-                <div class="item-header">
-                    <span class="item-title">Desarrollo Web e Integración de Sistemas</span>
-                    <span class="item-date">2024 - Presente</span>
-                </div>
-                <ul class="tasks">
-                    <li>Desarrollo de interfaces interactivas y paneles de administración enfocados en la experiencia del usuario.</li>
-                    <li>Creación de sistemas web para la gestión eficiente de usuarios y bases de datos relacionales.</li>
-                    <li>Integración de APIs de terceros y herramientas de IA para automatización de respuestas.</li>
-                </ul>
-            </div>
-
-            <div class="experience-item">
-                <div class="item-header">
-                    <span class="item-title">Soporte y Arquitectura de Hardware</span>
-                    <span class="item-date">2023 - Presente</span>
-                </div>
-                <ul class="tasks">
-                    <li>Diagnóstico de hardware a nivel componente y mantenimiento de infraestructuras físicas.</li>
-                    <li>Administración de sistemas operativos basados en Linux, gestión de redes locales y configuración de servidores de prueba.</li>
-                </ul>
+                <div class="skill-tag">Office Avanzado (Macros)</div>
+                <div class="skill-tag">Automatización</div>
+                <div class="skill-tag">Resolución de Problemas</div>
+                <div class="skill-tag">Trabajo en Equipo</div>
+                <div class="skill-tag">Inglés (B2)</div>
             </div>
         </section>
 
         <section class="card scroll-reveal slide-right">
+            <h3>Trabajos y Experiencia</h3>
+            
+            <div class="experience-item">
+                <div class="item-header">
+                    <span class="item-title">Prácticas Profesionales | Lightbox Mercadotecnia</span>
+                </div>
+                <ul class="tasks">
+                    <li>Desarrollo backend y frontend, administración de bases de datos y refactorización de código para diversos proyectos de la agencia.</li>
+                    <li>Programación e integración de funcionalidades web utilizando PHP, JavaScript y WordPress.</li>
+                    <li><a href="https://lightbox.mx" target="_blank" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Ver agencia Lightbox</a></li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="item-header">
+                    <span class="item-title">Servicio Social | Marketplace CANACO</span>
+                </div>
+                <ul class="tasks">
+                    <li>Desarrollo e implementación de plataforma e-commerce para la Cámara Nacional de Comercio.</li>
+                    <li>Gestión de despliegue en servidores, módulos de registro de vendedores y configuración de pasarelas de pago (Stripe Connect).</li>
+                    <li><a href="https://canacoaguascalientes.org/marketplace/" target="_blank" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Ver plataforma CANACO</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="card scroll-reveal fade-up">
             <h3>Educación</h3>
             <div class="education-item">
                 <div class="item-header">
-                    <span class="item-title">Ingeniería en Sistemas</span>
-                    <span class="item-date">Graduación esperada: Dic 2026</span>
+                    <div class="education-title-group">
+                        <img src="UAA-LOGO.png" alt="Logo UAA" class="uaa-logo">
+                        <span class="item-title">Ingeniería en Sistemas</span>
+                    </div>
                 </div>
-                <p>Universidad Autónoma de Aguascalientes</p>
-                <p class="education-details">Octavo Semestre en curso.</p>
+                <p>Universidad Autónoma de Aguascalientes (UAA)</p>
+                <p class="education-meta">Último año.</p>
+            </div>
+        </section>
+
+        <section class="card scroll-reveal slide-left">
+            <h3>Pasatiempos</h3>
+            <div class="skills-grid">
+                <div class="skill-tag">Meditar</div>
+                <div class="skill-tag">Ejercicios de respiración</div>
+                <div class="skill-tag">Vibe Coding</div>
             </div>
         </section>
 
