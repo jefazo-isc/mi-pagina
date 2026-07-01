@@ -331,7 +331,7 @@ h3::after {
 }
 
 .uaa-logo {
-  width: 70px;
+  width: 80px;
   height: auto;
   border-radius: 8px;
   filter: brightness(0.9);
@@ -595,5 +595,97 @@ body::after {
     opacity: 1 !important;
     visibility: visible !important;
     transform: none !important;
+  }
+}
+
+/* ============================================================
+   PRINT STYLES (Export CV to PDF)
+   ============================================================ */
+@media print {
+  body { 
+    background: white; 
+    color: black; 
+  }
+  body::before, body::after, .hero::before, .hero-particles, .profile-img-ring::before, .card::before {
+    display: none !important;
+  }
+  .hero { 
+    background: white; 
+    color: black; 
+    min-height: auto; 
+    padding: 1rem 0; 
+    text-align: left; 
+    display: block; 
+  }
+  .hero h1 { 
+    color: black; 
+    background: none; 
+    -webkit-text-fill-color: black; 
+  }
+  h3, .item-title, .hero h2 { 
+    color: #333; 
+  }
+  .card { 
+    background: white;
+    box-shadow: none; 
+    border: none; 
+    padding: 1rem 0; 
+    border-top: 2px solid #ccc; 
+    break-inside: avoid; 
+    margin-bottom: 1rem; 
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+  .scroll-reveal { 
+    opacity: 1 !important; 
+    visibility: visible !important; 
+    transform: none !important; 
+  }
+  .contact-links {
+    justify-content: flex-start;
+  }
+  .contact-links a, .project-link { 
+    color: black; 
+    background: none;
+    border: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    text-decoration: none; 
+    margin: 0 15px 0 0; 
+    font-size: 0.9rem; 
+    padding: 0;
+  }
+  .skills-grid { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 5px; 
+  }
+  .skill-tag { 
+    background: white; 
+    border: 1px solid #333; 
+    color: black; 
+    padding: 4px 8px; 
+    font-size: 0.8rem; 
+  }
+  .profile-img-container { 
+    float: right; 
+    margin-left: 20px; 
+    margin-bottom: 0; 
+  }
+  .profile-img-ring {
+    background: none;
+    box-shadow: none;
+    animation: none;
+    width: auto;
+    height: auto;
+  }
+  .profile-img { 
+    width: 120px; 
+    height: 120px; 
+    border: 2px solid #333; 
+    padding: 0;
+  }
+  .uaa-logo { 
+    display: none; 
   }
 }
