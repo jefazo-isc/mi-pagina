@@ -602,90 +602,36 @@ body::after {
    PRINT STYLES (Export CV to PDF)
    ============================================================ */
 @media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
   body { 
-    background: white; 
-    color: black; 
+    background-color: var(--bg-deep) !important; 
+    color: var(--text-primary) !important;
   }
-  body::before, body::after, .hero::before, .hero-particles, .profile-img-ring::before, .card::before {
+  .hero-particles {
     display: none !important;
-  }
-  .hero { 
-    background: white; 
-    color: black; 
-    min-height: auto; 
-    padding: 1rem 0; 
-    text-align: left; 
-    display: block; 
-  }
-  .hero h1 { 
-    color: black; 
-    background: none; 
-    -webkit-text-fill-color: black; 
-  }
-  h3, .item-title, .hero h2 { 
-    color: #333; 
-  }
-  .card { 
-    background: white;
-    box-shadow: none; 
-    border: none; 
-    padding: 1rem 0; 
-    border-top: 2px solid #ccc; 
-    break-inside: avoid; 
-    margin-bottom: 1rem; 
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
   }
   .scroll-reveal { 
     opacity: 1 !important; 
     visibility: visible !important; 
     transform: none !important; 
   }
-  .contact-links {
-    justify-content: flex-start;
+  .card { 
+    break-inside: avoid; 
+    margin-bottom: 2rem; 
+    box-shadow: none !important;
+    border: 1px solid var(--border-glass) !important;
   }
-  .contact-links a, .project-link { 
-    color: black; 
-    background: none;
-    border: none;
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
-    text-decoration: none; 
-    margin: 0 15px 0 0; 
-    font-size: 0.9rem; 
-    padding: 0;
+  .experience-item, .education-item {
+    break-inside: avoid;
   }
-  .skills-grid { 
-    display: flex; 
-    flex-wrap: wrap; 
-    gap: 5px; 
+  .contact-links a, .project-link {
+    text-decoration: none !important;
   }
-  .skill-tag { 
-    background: white; 
-    border: 1px solid #333; 
-    color: black; 
-    padding: 4px 8px; 
-    font-size: 0.8rem; 
-  }
-  .profile-img-container { 
-    float: right; 
-    margin-left: 20px; 
-    margin-bottom: 0; 
-  }
-  .profile-img-ring {
-    background: none;
-    box-shadow: none;
-    animation: none;
-    width: auto;
-    height: auto;
-  }
-  .profile-img { 
-    width: 120px; 
-    height: 120px; 
-    border: 2px solid #333; 
-    padding: 0;
-  }
-  .uaa-logo { 
-    display: none; 
+  /* Remove scrollbar just in case */
+  ::-webkit-scrollbar {
+    display: none;
   }
 }
